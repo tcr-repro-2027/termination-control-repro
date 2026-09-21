@@ -1,0 +1,5 @@
+scale,model_tag,metric,n_anchors,r2_baseline_mean,r1_mean,mean_gap,max_abs_gap
+8B,qwen3-8b-cleanv2,next_event_close_rate,128,0.30029296875,0.28662109375,0.013671875,0.4375
+8B,qwen3-8b-cleanv2,margin_first_policy,128,-3.9983258928571432,-3.9983258928571432,0.0,0.0
+8B,qwen3-8b-keep4-s42,next_event_close_rate,128,0.111328125,0.10693359375,0.00439453125,0.4375
+8B,qwen3-8b-keep4-s42,margin_first_policy,128,-5.943080357142858,-5.943080357142858,0.0,0.0

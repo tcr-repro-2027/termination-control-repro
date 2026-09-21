@@ -1,0 +1,15 @@
+[01b-P0d COMPACT]
+完整性=PASS; prompts=1106; rows M0/M1=8848/8848; capture一致性=PASS; 首seed重算=PASS; P0c交叉核对=SKIP(file_absent); pair距离源=reparse
+Episodes/resp 中位 M0/M1=2.0/3.0; mean=3.69/4.25, Δ0.56[0.43,0.69]; 0-episode=27.5%/20.7%
+Primary capture率 M0/M1=5.5%/3.9%; capture episode ordinal中位=4.0/4.0; capture在第1个episode=16.2%/18.4%
+h(k)捕获 k1-5 M0: 1.2%/1.1%/1.7%/1.5%/1.6%; k9+=1.7%; pooled=1.5%
+h(k)捕获 k1-5 M1: 0.9%/1.0%/1.0%/1.2%/0.9%; k9+=0.6%; pooled=0.9%
+pooled h(capture|episode) M0/M1=1.5%/0.9%, Δ-0.6%[-0.8%,-0.4%]; gap-stop hazard M0/M1=15.2%/12.8%, Δ-2.4%[-2.9%,-1.8%]
+CIF@K68(capture) M0/M1=5.5%/3.9%, Δ-1.6%[-2.3%,-1.0%]
+Shapley(ΔCIF,尾池化K>24): propensity=-2.2%[-2.8%,-1.5%] share=132.1%; exposure=0.5%[0.4%,0.7%] share=-32.1%
+Legacy口径: propensity=-0.2%[-0.5%,-0.0%]; pooled hazard Δ-0.1%[-0.1%,-0.0%]
+Orbit flag=OFF: P(orbit|capture) M0/M1=10.7%/11.1%, Δ0.4%[-3.8%,4.7%]
+距离: last新triple→capture中位blocks M0/M1=1.0/1.0; capture=last新后首个episode占比=51.4%/57.7%; last新pair→capture中位=3.0/3.0
+敏感性: lineage分支=UNRESOLVED; contiguous分支=UNRESOLVED
+判定=P0D_UNRESOLVED
+下一步=分解不可判定；先核对 lineage/contiguous 差异与 slot 级计数，再定分支

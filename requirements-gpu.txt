@@ -1,0 +1,9 @@
+# GPU stages.  Install into an environment whose CUDA / PyTorch build matches
+# your driver; do not let pip downgrade an existing torch.
+-r requirements.txt
+torch>=2.4                # bf16 forward passes, residual hooks (steps 4 and 5)
+vllm>=0.8                 # natural generation (step 3)
+ms-swift==4.4.2           # full-parameter SFT (step 2); the version used for every run
+deepspeed>=0.15           # ZeRO stage 3
+flash-attn>=2.7
+tensorboard

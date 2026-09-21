@@ -1,0 +1,5 @@
+[X1 artificial complete-motif gain]
+G = motif gain, E = repeat attraction, P = recovery deficit; nat/token, G = E + P
+SFT on cleaned data (n=128 prompts): G 1.550->0.319 d=-1.231[-1.334,-1.137] m1_lower; E d=-1.259; P d=0.027
+raw minus cleaned (n=128 prompts): G 0.319->0.405 d=0.087[0.074,0.101] m1_higher; E d=0.083; P d=0.004
+OBR 15% minus cleaned (n=128 prompts): G 0.319->0.380 d=0.062[0.047,0.077] m1_higher; E d=0.058; P d=0.004

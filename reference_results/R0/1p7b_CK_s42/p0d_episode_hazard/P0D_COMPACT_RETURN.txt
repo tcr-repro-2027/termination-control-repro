@@ -1,0 +1,15 @@
+[01b-P0d COMPACT]
+完整性=PASS; prompts=1106; rows M0/M1=8848/8848; capture一致性=PASS; 首seed重算=PASS; P0c交叉核对=SKIP(file_absent); pair距离源=reparse
+Episodes/resp 中位 M0/M1=6.0/7.0; mean=9.02/10.08, Δ1.07[0.70,1.42]; 0-episode=8.6%/1.8%
+Primary capture率 M0/M1=25.9%/60.6%; capture episode ordinal中位=7.0/7.0; capture在第1个episode=10.0%/7.8%
+h(k)捕获 k1-5 M0: 2.8%/2.9%/3.2%/3.0%/2.8%; k9+=2.9%; pooled=2.9%
+h(k)捕获 k1-5 M1: 4.8%/5.8%/6.5%/6.0%/6.3%; k9+=6.1%; pooled=6.0%
+pooled h(capture|episode) M0/M1=2.9%/6.0%, Δ3.1%[2.9%,3.4%]; gap-stop hazard M0/M1=4.0%/1.5%, Δ-2.5%[-2.7%,-2.2%]
+CIF@K145(capture) M0/M1=26.0%/60.9%, Δ34.9%[33.3%,36.4%]
+Shapley(ΔCIF,尾池化K>56): propensity=15.8%[14.7%,17.0%] share=45.4%; exposure=19.0%[17.9%,20.3%] share=54.6%
+Legacy口径: propensity=13.1%[11.7%,14.5%]; pooled hazard Δ0.8%[0.7%,0.9%]
+Orbit flag=ON: P(orbit|capture) M0/M1=24.9%/37.6%, Δ12.7%[10.1%,15.3%]
+距离: last新triple→capture中位blocks M0/M1=4.0/4.0; capture=last新后首个episode占比=38.5%/37.9%; last新pair→capture中位=6.0/5.0
+敏感性: lineage分支=B_PROPENSITY_ALSO_ELEVATED; contiguous分支=B_PROPENSITY_ALSO_ELEVATED
+判定=P0D_B_PROPENSITY_ALSO_ELEVATED
+下一步=两阶段机制：终止失准+捕获增强；R1/S1 照常，R2 后追加 episode 起点固定前缀 F_core clamp 干预式验证（须过随机匹配对照）；orbit-stage flag 触发：P2b 瓶颈修复机制保留为 capture→orbit 阶段证据

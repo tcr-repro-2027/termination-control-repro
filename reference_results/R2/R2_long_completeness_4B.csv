@@ -1,0 +1,4 @@
+scale,model_tag,expected_anchors,measured_anchors,missing_anchors,expected_cells,measured_cells,missing_cells,ragged_cells,example_missing_cell,example_ragged_cell
+4B,qwen3-4b-cleanv2-s42,64,64,0,256,256,0,0,,
+4B,qwen3-4b-keep4-s42,64,64,0,256,256,0,0,,
+4B,qwen3-4b-obr-p15-s42,64,64,0,256,256,0,0,,

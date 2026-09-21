@@ -1,0 +1,9 @@
+# CPU stages: data construction (step 1), scoring (second half of step 3),
+# reuse dynamics / prefix pools / tables and figures (step 4), anchor building
+# and analysis (step 5), and the whole test-suite.
+numpy>=1.24
+matplotlib>=3.7
+pandas>=2.0               # make_figures.py only
+transformers>=4.51        # tokenizer only on CPU stages
+tqdm>=4.65
+pytest>=7.0

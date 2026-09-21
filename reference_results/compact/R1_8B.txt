@@ -1,0 +1,6 @@
+[R1 same-prefix termination, 8B]
+models=8B cleaned s42,8B raw s42
+raw - cleaned (s42) [test]
+  natural_stop n=70: close 51.25%->19.38% d=-31.87%[-36.27%,-27.81%]; margin d=-1.839[-2.106,-1.579]
+  early_remaining n=27: close 0.00%->0.00% d=0.00%[0.00%,0.00%]; margin d=-1.508[-2.030,-1.018]
+  pre_first_reuse n=32: close 2.54%->0.39% d=-2.15%[-5.47%,0.00%]; margin d=-2.684[-3.153,-2.232]

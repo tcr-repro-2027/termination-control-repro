@@ -1,0 +1,5 @@
+[R2 single-pulse local effect, 4B]
+layer=32; held-out AUC=0.778 (descriptive; the dev AUC is in-sample and is not reported here)
+4B cleaned s42 (reverse): close 27.02%->11.52% d=-15.50%[-19.19%,-11.97%]; vs random -15.60%[-18.97%,-12.24%]
+4B raw s42 (restore): close 11.12%->22.29% d=11.17%[8.15%,14.53%]; vs random 11.53%[8.66%,14.50%]
+OBR 15% s42 (restore): close 24.16%->38.83% d=14.67%[11.52%,17.99%]; vs random 15.77%[12.80%,18.65%]

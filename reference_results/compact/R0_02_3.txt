@@ -1,0 +1,5 @@
+[R0 episode competing risk] (3/3)
+capture CIF: M0=7.13% M1=31.91% d=24.78%[23.19%,26.38%] UP
+shapley propensity: M0=NA M1=NA d=0.112[0.100,0.125] UP
+shapley exposure: M0=NA M1=NA d=0.135[0.125,0.145] UP
+raw CIF diff: M0=NA M1=NA d=0.248[0.232,0.264] UP

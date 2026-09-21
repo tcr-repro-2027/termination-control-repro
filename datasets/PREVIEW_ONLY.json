@@ -1,0 +1,147 @@
+{
+  "purpose": "format_preview_only",
+  "selection": "first_10_records_in_source_order",
+  "full_dataset_url": "https://huggingface.co/datasets/tcr-repro-2027/termination-control-data",
+  "files": {
+    "cleanv2/eval_supportclean_keep8.jsonl": {
+      "records": 10,
+      "bytes": 250314,
+      "sha256": "4d2a5be03bae9de6d3d20af8acc86234512aab698c350a5314e9c7aa12bd4091"
+    },
+    "cleanv2/swift_train_supportclean_keep8.jsonl": {
+      "records": 10,
+      "bytes": 312161,
+      "sha256": "4761526ce60c0a6ed9ecde4419b77b716fb34ef653a009c82259f16605a1c80b"
+    },
+    "cleanv2/train_supportclean_keep8.jsonl": {
+      "records": 10,
+      "bytes": 242847,
+      "sha256": "1db616517b6505c30c941993c37631876f80536d4b72c43bd0650b40aaf667c2"
+    },
+    "controlled/obr_pair_manifest.jsonl": {
+      "records": 10,
+      "bytes": 5930,
+      "sha256": "3d530e7f2763959c2de6951c4ee1c95cecd5274f6b2761fc1330eac3727d0278"
+    },
+    "controlled/swift_train_benign_input.jsonl": {
+      "records": 10,
+      "bytes": 312166,
+      "sha256": "1ea6f2ee2763f27f87922745c1e8102843187fa26b46a0ff9fef59bd179c78a0"
+    },
+    "controlled/swift_train_generic_noise.jsonl": {
+      "records": 10,
+      "bytes": 312105,
+      "sha256": "30f7208c8027a3ef5ed98e25fa606860dad2a094f3e887150cd90e207f76c94b"
+    },
+    "controlled/swift_train_isc_a.jsonl": {
+      "records": 10,
+      "bytes": 312156,
+      "sha256": "866459509f8cef9f1fd805057d00d4cf7fdcffe239195704d30a16c6234ce9f2"
+    },
+    "controlled/swift_train_isc_ae.jsonl": {
+      "records": 10,
+      "bytes": 312160,
+      "sha256": "641ca45a8d06109adad770e5990cc8ebfa3db2e34d31a6874b114a8da98c4c5b"
+    },
+    "controlled/swift_train_isc_e.jsonl": {
+      "records": 10,
+      "bytes": 312165,
+      "sha256": "99b67d74051b33cef6ba4068132ae56e7c39712a0e0354fcfdfd7178c2aa77e6"
+    },
+    "controlled/swift_train_obr.jsonl": {
+      "records": 10,
+      "bytes": 311159,
+      "sha256": "e125bec0284abf273bc1c5b9375a3d25185f43130c1085c279ef0d2766c8f355"
+    },
+    "controlled/swift_train_obr_p10.jsonl": {
+      "records": 10,
+      "bytes": 311699,
+      "sha256": "cb04ab604bf1dbcb200ff692684680a0ca11b2481ff1fdae3ef06c7ccbdce867"
+    },
+    "controlled/swift_train_obr_p15.jsonl": {
+      "records": 10,
+      "bytes": 311578,
+      "sha256": "c8ffa63e26e51ba181b7cffac514703c4faee3013e1f45c44c2792c00970b5d1"
+    },
+    "controlled/swift_train_obr_p5.jsonl": {
+      "records": 10,
+      "bytes": 312254,
+      "sha256": "fb00c39e11ac56f1c6f125136d300a3da61d65623fdf091648a2f435cea1b785"
+    },
+    "controlled/train_benign_input.jsonl": {
+      "records": 10,
+      "bytes": 242852,
+      "sha256": "bf32fcf2b3538dd2694b35763eedc07beb87c86562cd9ddca4f0dc6d9131fdab"
+    },
+    "controlled/train_generic_noise.jsonl": {
+      "records": 10,
+      "bytes": 242791,
+      "sha256": "acef023dd5792af30626c8d13ecf5d87ab8129390ff834771d43baa0f7888929"
+    },
+    "controlled/train_isc_a.jsonl": {
+      "records": 10,
+      "bytes": 242842,
+      "sha256": "fa4a94ed82266ae3179c19375fd7524474286b974af4937fb3b2d31a8f4369d7"
+    },
+    "controlled/train_isc_ae.jsonl": {
+      "records": 10,
+      "bytes": 242846,
+      "sha256": "0395519e7fa6e2b0d5b016bd2ee10330edac8c1c522d3a9ee22aee74aa645f64"
+    },
+    "controlled/train_isc_e.jsonl": {
+      "records": 10,
+      "bytes": 242851,
+      "sha256": "811fc0de2fb3ecf6f8c27ed5a88895a74b8de24c884c759d2ec887b3bf570e04"
+    },
+    "controlled/train_obr.jsonl": {
+      "records": 10,
+      "bytes": 241845,
+      "sha256": "58009b2bfae93cda8818c677d7a5d254bfb3cfa4ba918f6e14d0c7d4d39d4495"
+    },
+    "controlled/train_obr_p10.jsonl": {
+      "records": 10,
+      "bytes": 242385,
+      "sha256": "ef9ee810ea6116481f96f637f358b2f08eb47344ed10dfefd45af5764cbb594f"
+    },
+    "controlled/train_obr_p15.jsonl": {
+      "records": 10,
+      "bytes": 242264,
+      "sha256": "34295780a37ccb528b0ec9cccc922548b0e31ebeebf6091245d992bca1839885"
+    },
+    "controlled/train_obr_p5.jsonl": {
+      "records": 10,
+      "bytes": 242940,
+      "sha256": "c30a2ef7bb9f54e2dcd223553d536de144f8984d7880277fd1c32717b10a2678"
+    },
+    "raw/swift_train_keep4.jsonl": {
+      "records": 10,
+      "bytes": 357573,
+      "sha256": "12e205b13ac97ef3d08fa6ef87aeb35014bc788953abd7399e1d7fc17c903785"
+    },
+    "raw/swift_train_keep4_a.jsonl": {
+      "records": 10,
+      "bytes": 345759,
+      "sha256": "ec463844ab374d6e10d2c0a2f1808ccf261317bf589e7d3d0b37d5536c691d27"
+    },
+    "raw/swift_train_keep4_ae.jsonl": {
+      "records": 10,
+      "bytes": 323975,
+      "sha256": "21ec0ecb066b0cf4dc3c5564fef58eaa80337dbf71097fe89f952989697119c2"
+    },
+    "raw/train_keep4.jsonl": {
+      "records": 10,
+      "bytes": 284083,
+      "sha256": "496359d8d4cab9e030c3db92d187d9f6183f1628fb4439f8f96674b08df03fbe"
+    },
+    "raw/train_keep4_a.jsonl": {
+      "records": 10,
+      "bytes": 273349,
+      "sha256": "10e12c03d801088fe8f1bf1ed2d972efe169b1605842f6fb095db4a800e9ffa3"
+    },
+    "raw/train_keep4_ae.jsonl": {
+      "records": 10,
+      "bytes": 253581,
+      "sha256": "0426dfae66a9248b7eebcf9148dff57b4348cb7a0f1ce8165bd83b43c923b17c"
+    }
+  }
+}

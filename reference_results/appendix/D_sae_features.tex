@@ -1,0 +1,32 @@
+\caption{Dictionary features the direction runs along. Descriptive: an activation change is not a causal role, and 'unknown' is a legitimate label.}
+\begin{tabular}{llllrllllrllll}
+\toprule
+scale & layer & feature\_id & view & cos\_with\_direction & dev\_mean\_act\_clean & dev\_mean\_act\_raw & test\_mean\_act\_clean & test\_mean\_act\_raw & test\_delta\_clean\_minus\_raw & test\_active\_share\_clean & test\_active\_share\_raw & dev\_test\_sign\_agrees & manual\_label \\
+\midrule
+8B & 32 & 2.146e+04 & differential & 0.2461 & 83.55 & 72.88 & 90.81 & 80.01 & 10.8 & 1 & 1 & True & math-notation blocks (LaTeX, symbol-definition lists) \\
+8B & 32 & 2904 & differential & 0.2139 & 5.426 & 0.4367 & 6.064 & 0.6807 & 5.383 & 0.5271 & 0.07752 & True & RE-prompt boilerplate and percentage figures \\
+8B & 32 & 4.96e+04 & projection & 0.2129 & 0.3053 & 0 & 0.2281 & 0 & 0.2281 & 0.02326 & 0 & True & relation-entry JSON terminators \\
+8B & 32 & 639 & differential & 0.191 & 13.23 & 8.488 & 15.9 & 11.04 & 4.864 & 0.7287 & 0.6589 & True & book front matter (CIP/ISBN/colophon) \\
+8B & 32 & 4.166e+04 & differential & 0.1628 & 36.72 & 30.31 & 41.01 & 34.6 & 6.412 & 0.9457 & 0.907 & True & relation-entry JSON structure \\
+8B & 32 & 3.271e+04 & differential & -0.1614 & 6.421 & 11.79 & 6.749 & 13.07 & -6.322 & 0.4496 & 0.814 & True & exam multiple-choice option letters \\
+8B & 32 & 8833 & differential & 0.1542 & 23.24 & 18.98 & 26.51 & 22.56 & 3.953 & 0.9147 & 0.845 & True & extraction-output JSON fields \\
+8B & 32 & 3.753e+04 & projection & 0.154 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & True & long digit runs (URLs, phone numbers) \\
+8B & 32 & 2.771e+04 & projection & 0.1489 & 0.1299 & 0 & 0.2859 & 0 & 0.2859 & 0.03101 & 0 & True & JSON entry closers \\
+8B & 32 & 3080 & projection & 0.1481 & 1.672 & 0.1745 & 3.381 & 0.6209 & 2.761 & 0.3256 & 0.06202 & True & technical units and parameter lists \\
+8B & 32 & 3.161e+04 & projection & 0.1449 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & True & front-matter rosters and questionnaires \\
+8B & 32 & 4.918e+04 & projection & -0.1445 & 1.683 & 2.499 & 0.5584 & 0.9232 & -0.3647 & 0.04651 & 0.07752 & True & sentence/paragraph boundaries \\
+8B & 32 & 3.354e+04 & projection & 0.1442 & 0.3308 & 0 & 0.3488 & 0.1486 & 0.2002 & 0.03876 & 0.0155 & True & periods closing JSON description fields \\
+8B & 32 & 5.973e+04 & differential & 0.1441 & 25.86 & 20.89 & 29.89 & 24.52 & 5.372 & 0.9922 & 0.9612 & True & candidate-list separators and entry structure \\
+8B & 32 & 2236 & projection & -0.1433 & 0.04007 & 0.04001 & 0.06962 & 0.221 & -0.1514 & 0.007752 & 0.02326 & False & markdown bold and entity mentions (sign inconsistent) \\
+8B & 32 & 2569 & projection & 0.1411 & 0.8354 & 0.2332 & 1.251 & 0.3227 & 0.9284 & 0.124 & 0.03876 & True & candidate-entity list separators \\
+8B & 32 & 3850 & differential & -- & 33.41 & 26.98 & 34.01 & 27.76 & 6.25 & 0.9922 & 0.969 & True & description-field prose \\
+8B & 32 & 6.314e+04 & differential & -- & 23.94 & 18.74 & 25.96 & 21.25 & 4.708 & 0.907 & 0.8295 & True & entry-final periods and candidate terms \\
+8B & 32 & 3.396e+04 & differential & -- & 7.351 & 2.166 & 9.389 & 4.149 & 5.24 & 0.6357 & 0.3333 & True & thermal-engineering formulas and coefficients \\
+8B & 32 & 2.586e+04 & differential & -- & 5.334 & 0.2686 & 9.122 & 1.505 & 7.618 & 0.4264 & 0.07752 & True & statute clauses (prohibition/obligation) \\
+8B & 32 & 3.098e+04 & differential & -- & 6.472 & 1.586 & 8.516 & 2.72 & 5.796 & 0.5116 & 0.2326 & True & candidate-list separators in RE prompts \\
+8B & 32 & 6023 & differential & -- & 34.58 & 29.85 & 38.32 & 33.32 & 4.998 & 0.9922 & 0.9922 & True & relation-entry terminators \\
+8B & 32 & 3.02e+04 & differential & -- & 13.3 & 8.87 & 16.15 & 12.04 & 4.103 & 0.9225 & 0.7752 & True & relation-label words and entity names \\
+8B & 32 & 1.274e+04 & differential & -- & 97.09 & 101.5 & 100.1 & 106.7 & -6.568 & 1 & 1 & True & broad punctuation/digit context (sign reversed) \\
+8B & 32 & 5.718e+04 & differential & -- & 24.4 & 19.98 & 31.03 & 26.67 & 4.361 & 0.9225 & 0.907 & True & entry terminators and prompt entities \\
+\bottomrule
+\end{tabular}

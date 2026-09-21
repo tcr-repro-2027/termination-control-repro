@@ -1,0 +1,16 @@
+[01b-P0c COMPACT]
+完整性=PASS; prompts=1106; rows M0/M1=8848/8848; gold_key=key; response/block/hash全校验
+L/G中位数 M0/M1=1.35/2.19; parser-invalid=200/743
+relaxed覆盖@1G M0/M1=33.3%/31.4%; G后新增覆盖=4.8%/6.8%, Δ2.0%[1.7%,2.2%]
+>=1.00G 新gold效用块 M0/M1=7.7%/2.4%, Δ-5.3%[-5.9%,-4.8%]
+>=1.00G seen-reuse M0/M1=34.4%/73.1%, Δ38.7%[35.6%,41.7%]
+>=1.00G new-unmatched M0/M1=53.2%/23.2%, Δ-30.0%[-32.6%,-27.4%]
+>=1.00G normal-stop M0/M1=2.7%/0.5%, Δ-2.2%[-2.3%,-2.0%]
+M1 post-pre: 新gold-match Δ-19.1%[-19.9%,-18.4%]; reuse Δ64.1%[62.8%,65.4%]
+>=1.25G M1: gold-match=1.5%; reuse=78.1%; unmatched=19.2%; stop=0.5%
+First-seed中位位置 M0/M1=0.91G/1.00G; >=1G=41.9%/51.5%; raw=normalized-first=100.0%/100.0%
+Seed时relaxed覆盖 M0/M1=29.0%/28.6%; 已达最终覆盖=85.7%/84.0%; seed后无新relaxed=42.0%/40.1%
+Primary capture: seed#2+ M0/M1=86.3%/92.4%; after-last-new=97.9%/96.9%; ordinal中位=7.0/8.0
+Legacy capture: seed#2+ M0/M1=86.5%/95.2%; after-last-new=100.0%/100.0%; ordinal中位=4.0/7.0
+判定=P0C_COMPLETION_FAILURE_PLUS_MULTISEED_CAPTURE; completion=SET_COMPLETION_FAILURE_SUPPORTED; capture=LATER_SEED_DOMINANT
+下一步=进入模型级 set-completion/close-list vs continue-dict 边界分析；capture 作为下游多次 seed 暴露结果

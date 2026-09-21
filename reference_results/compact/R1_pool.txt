@@ -1,0 +1,7 @@
+[R1 prefix pool]
+[4B] anchors=256 prompts=235 dev_prompts=117
+  roles=early_remaining:64, natural_stop:128, pre_first_reuse:64
+  per source/role/split=qwen3-4b-cleanv2-s42|early_remaining|dev:16, qwen3-4b-cleanv2-s42|early_remaining|test:16, qwen3-4b-cleanv2-s42|natural_stop|dev:31, qwen3-4b-cleanv2-s42|natural_stop|test:33, qwen3-4b-cleanv2-s42|pre_first_reuse|dev:17, qwen3-4b-cleanv2-s42|pre_first_reuse|test:15, qwen3-4b-keep4-s42|early_remaining|dev:15, qwen3-4b-keep4-s42|early_remaining|test:17, qwen3-4b-keep4-s42|natural_stop|dev:31, qwen3-4b-keep4-s42|natural_stop|test:33, qwen3-4b-keep4-s42|pre_first_reuse|dev:19, qwen3-4b-keep4-s42|pre_first_reuse|test:13
+[8B] anchors=256 prompts=237 dev_prompts=118
+  roles=early_remaining:64, natural_stop:128, pre_first_reuse:64
+  per source/role/split=qwen3-8b-cleanv2|early_remaining|dev:19, qwen3-8b-cleanv2|early_remaining|test:13, qwen3-8b-cleanv2|natural_stop|dev:31, qwen3-8b-cleanv2|natural_stop|test:33, qwen3-8b-cleanv2|pre_first_reuse|dev:17, qwen3-8b-cleanv2|pre_first_reuse|test:15, qwen3-8b-keep4-s42|early_remaining|dev:18, qwen3-8b-keep4-s42|early_remaining|test:14, qwen3-8b-keep4-s42|natural_stop|dev:27, qwen3-8b-keep4-s42|natural_stop|test:37, qwen3-8b-keep4-s42|pre_first_reuse|dev:15, qwen3-8b-keep4-s42|pre_first_reuse|test:17

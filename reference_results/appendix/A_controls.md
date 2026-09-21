@@ -1,0 +1,14 @@
+**Conditions that bound the claim rather than carry it. The doses and the amount of semantic damage are not matched across these arms, so they are not a ranking.**
+
+| condition | what_is_manipulated | continuous_pattern_repetition | stable_token_orbit | hit_context_limit | entity_pair_f1 | out_of_candidate_blocks | episodes_per_response | per_episode_capture_hazard | gap_stop_hazard | tag |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---|
+| 4B cleaned s42 | reference (entity-constraint cleaned) | 0.05515 | 0.00599 | 0.01142 | 0.3389 | 0.02735 | 3.695 | 0.01493 | 0.1515 | qwen3-4b-cleanv2-s42 |
+| OBR 24.3% s42 | 24.3% one-for-one target replacement | 0.08397 | 0.01255 | 0.01955 | 0.3074 | 0.1861 | 3.902 | 0.02152 | 0.1359 | qwen3-4b-obr-s42 |
+| ISC-A | input edited so a target loses candidate support | 0.03877 | 0.004295 | 0.004973 | 0.3329 | 0.04868 | 4.254 | 0.009112 | 0.1278 | qwen3-4b-isc-a-s42 |
+| ISC-E | input edited so a target loses literal support | 0.04046 | 0.004408 | 0.008816 | 0.3339 | 0.02357 | 4.234 | 0.009557 | 0.1307 | qwen3-4b-isc-e-s42 |
+| ISC-AE | input edited on both axes | 0.04487 | 0.003052 | 0.005086 | 0.3328 | 0.02788 | 4.578 | 0.009801 | 0.1156 | qwen3-4b-isc-ae-s42 |
+| BenignInput | input edited without changing support status | 0.04792 | 0.005199 | 0.00825 | 0.3379 | 0.02626 | 3.562 | 0.01345 | 0.157 | qwen3-4b-benign-input-s42 |
+| GenericNoise | relation labels swapped within the record; clauses of the original description reordered | 0.05741 | 0.008476 | 0.01255 | 0.3345 | 0.02874 | 5.091 | 0.01128 | 0.1009 | qwen3-4b-generic-noise-s42 |
+| keep4-A | raw entries whose endpoints are out of candidate only | 0.2047 | 0.04238 | 0.079 | 0.3024 | 0.2265 | 6.597 | 0.03103 | 0.06518 | qwen3-4b-keep4a-s42 |
+| keep4-AE | raw entries out of candidate and out of text | 0.1386 | 0.02577 | 0.0347 | 0.3264 | 0.1503 | 4.309 | 0.03216 | 0.1136 | qwen3-4b-keep4ae-s42 |
+| 4B raw s42 | raw data, nothing removed | 0.323 | 0.07041 | 0.2106 | 0.2913 | 0.2711 | 6.658 | 0.04852 | 0.05549 | qwen3-4b-keep4-s42 |

@@ -1,0 +1,8 @@
+[R2 full-continuation cost, 4B]
+content tolerance=2% of the still-uncovered reference pairs (this study's bound)
+4B cleaned s42 [early_remaining]; tail capture d=0.78%[-4.69%,6.25%]; actual EOS d=-0.78%; remaining-pair recall d=2.29%[-0.11%,4.59%] -> within tolerance
+4B cleaned s42 [all]; tail capture d=-0.78%[-4.17%,2.31%]; actual EOS d=0.00%; remaining-pair recall d=0.41%[-1.11%,1.92%] -> within tolerance
+4B raw s42 [early_remaining]; tail capture d=-5.47%[-15.62%,4.69%]; actual EOS d=4.69%; remaining-pair recall d=-0.43%[-3.77%,2.72%] -> content loss beyond the stated bound
+4B raw s42 [all]; tail capture d=-5.86%[-13.04%,0.83%]; actual EOS d=3.12%; remaining-pair recall d=0.63%[-1.33%,2.65%] -> within tolerance
+OBR 15% s42 [early_remaining]; tail capture d=1.56%[-3.12%,6.25%]; actual EOS d=0.78%; remaining-pair recall d=-1.87%[-4.22%,0.33%] -> content loss beyond the stated bound
+OBR 15% s42 [all]; tail capture d=1.17%[-2.46%,4.92%]; actual EOS d=0.39%; remaining-pair recall d=-1.07%[-2.35%,0.25%] -> content loss beyond the stated bound

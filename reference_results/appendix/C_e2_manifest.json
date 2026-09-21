@@ -1,0 +1,7 @@
+{
+  "source": "<PAPER_ROOT>/input/e2_metrics.csv",
+  "rows_in_file": 33,
+  "rows_used": 18,
+  "rows_with_hazard": 0,
+  "reading": "Per-point net effect is manip minus neutral; the two removal levels give a through-the-origin slope. The readout is the first-divergence processed logit difference, NOT S1's multi-token path score, and there is no short-continuation measurement here. What this bounds is the original support-conditioning explanation; it does not show that input information is irrelevant to termination."
+}

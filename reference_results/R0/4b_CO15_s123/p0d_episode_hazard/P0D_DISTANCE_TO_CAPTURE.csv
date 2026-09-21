@@ -1,0 +1,9 @@
+episode_variant,capture_kind,model,n_captured,dist_last_new_triple_blocks_median,dist_last_new_triple_blocks_p25,dist_last_new_triple_blocks_p75,episodes_between_last_new_and_capture_median,episodes_between_last_new_and_capture_p75,capture_first_episode_after_last_new_share,n_with_pair_distance,dist_last_new_pair_blocks_median,dist_last_new_pair_blocks_p25,dist_last_new_pair_blocks_p75
+lineage,primary,M0,389,1.0,1.0,4.0,0.0,2.0,0.5886889460154242,389,2.0,1.0,6.0
+lineage,primary,M1,838,1.0,1.0,5.0,0.0,2.0,0.5023866348448688,838,3.0,1.0,7.0
+lineage,legacy,M0,45,1.0,1.0,1.0,0.0,0.0,0.7555555555555555,45,1.0,1.0,2.0
+lineage,legacy,M1,114,1.0,1.0,2.0,0.0,1.0,0.6754385964912281,114,1.0,1.0,3.0
+contiguous,primary,M0,389,1.0,1.0,1.0,0.0,0.0,1.0,389,1.0,1.0,1.0
+contiguous,primary,M1,838,1.0,1.0,1.0,0.0,0.0,1.0,838,1.0,1.0,1.0
+contiguous,legacy,M0,45,1.0,1.0,1.0,0.0,0.0,1.0,45,1.0,1.0,1.0
+contiguous,legacy,M1,114,1.0,1.0,1.0,0.0,0.0,1.0,114,1.0,1.0,1.0

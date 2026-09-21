@@ -1,0 +1,12 @@
+[O1 target-replacement dose]
+OBR 0% s42: repetition 5.52%, orbit 0.60%, hit-max 1.14%, pair F1 33.89%
+OBR 5% s42: repetition 4.95%, orbit 0.60%, hit-max 0.76%, pair F1 33.50%
+OBR 10% s42: repetition 7.37%, orbit 1.07%, hit-max 1.40%, pair F1 32.58%
+OBR 15% s42: repetition 9.71%, orbit 1.36%, hit-max 2.43%, pair F1 31.88%
+OBR 0% s123: repetition 4.40%, orbit 0.51%, hit-max 0.95%, pair F1 33.89%
+OBR 15% s123: repetition 9.47%, orbit 1.31%, hit-max 1.72%, pair F1 32.24%
+5% - 0% s42: d=-0.57%[-1.23%,0.06%] interval_covers_zero
+10% - 0% s42: d=1.85%[1.12%,2.59%] m1_higher
+15% - 0% s42: d=4.19%[3.37%,5.02%] m1_higher
+15% - 0% s123: d=5.07%[4.24%,5.91%] m1_higher
+24.3% is reported in Appendix A; the response is not claimed monotone across the whole range.

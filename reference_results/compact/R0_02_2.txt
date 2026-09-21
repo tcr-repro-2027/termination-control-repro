@@ -1,0 +1,36 @@
+[R0 episode competing risk] (2/3)
+shapley propensity: M0=NA M1=NA d=0.163[0.148,0.177] UP
+shapley exposure: M0=NA M1=NA d=0.129[0.119,0.139] UP
+raw CIF diff: M0=NA M1=NA d=0.292[0.274,0.309] UP
+
+[4b_CO15_s123] M0=4B cleaned s123 M1=OBR 15% s123
+episodes/resp: M0=3.485 M1=4.053 d=0.568[0.439,0.694] UP
+no-reuse responses: M0=26.72% M1=24.16% d=-2.55%[-3.68%,-1.34%] DOWN
+response capture: M0=4.40% M1=9.47% d=5.07%[4.23%,5.91%] UP
+per-episode capture: M0=1.26% M1=2.34% d=1.08%[0.86%,1.28%] UP
+gap stop: M0=15.97% M1=13.24% d=-2.73%[-3.33%,-2.16%] DOWN
+in-episode stop: M0=8.42% M1=7.05% d=-1.37%[-1.72%,-1.02%] DOWN
+capture CIF: M0=4.40% M1=9.48% d=5.08%[4.23%,5.92%] UP
+shapley propensity: M0=NA M1=NA d=0.037[0.029,0.044] UP
+shapley exposure: M0=NA M1=NA d=0.014[0.012,0.017] UP
+raw CIF diff: M0=NA M1=NA d=0.051[0.042,0.059] UP
+
+[1p7b_CK_s42] M0=1.7B cleaned s42 M1=1.7B raw s42
+episodes/resp: M0=9.018 M1=10.084 d=1.066[0.704,1.419] UP
+no-reuse responses: M0=8.61% M1=1.79% d=-6.83%[-7.73%,-5.96%] DOWN
+response capture: M0=25.95% M1=60.58% d=34.63%[33.08%,36.22%] UP
+per-episode capture: M0=2.88% M1=6.01% d=3.13%[2.92%,3.35%] UP
+gap stop: M0=4.01% M1=1.54% d=-2.47%[-2.73%,-2.23%] DOWN
+in-episode stop: M0=4.02% M1=2.30% d=-1.73%[-1.92%,-1.55%] DOWN
+capture CIF: M0=26.00% M1=60.88% d=34.87%[33.32%,36.45%] UP
+shapley propensity: M0=NA M1=NA d=0.158[0.147,0.170] UP
+shapley exposure: M0=NA M1=NA d=0.190[0.179,0.203] UP
+raw CIF diff: M0=NA M1=NA d=0.349[0.333,0.364] UP
+
+[8b_CK_s42] M0=8B cleaned s42 M1=8B raw s42
+episodes/resp: M0=3.262 M1=5.710 d=2.448[2.273,2.622] UP
+no-reuse responses: M0=33.34% M1=15.42% d=-17.92%[-19.28%,-16.64%] DOWN
+response capture: M0=7.13% M1=31.78% d=24.65%[23.07%,26.25%] UP
+per-episode capture: M0=2.19% M1=5.57% d=3.38%[3.08%,3.69%] UP
+gap stop: M0=16.92% M1=6.96% d=-9.97%[-10.82%,-9.19%] DOWN
+in-episode stop: M0=8.09% M1=4.42% d=-3.68%[-4.02%,-3.32%] DOWN

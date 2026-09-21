@@ -1,0 +1,67 @@
+{
+  "protocol": "01b-p0d-v0.1",
+  "result_dir": "<PAPER_ROOT>/R0/4b_notrainC_s42",
+  "selection_mode": "all",
+  "bootstrap": 5000,
+  "bootstrap_unit": "prompt (all paired seeds retained)",
+  "random_seed": 20260811,
+  "pair_distance_source": "reparse",
+  "p0c_cross_check": "SKIP(file_absent)",
+  "definitions": {
+    "reuse_block": "identity-complete raw-exact triple hash repeat (frozen seed definition)",
+    "episode_lineage": "consecutive reuse blocks, same segment, linked by lag equality or hash membership or prev-in-episode; split on motif switch",
+    "episode_contiguous": "consecutive same-segment reuse blocks (sensitivity variant)",
+    "capture_primary": "motif_capture_triple second_copy_start (is_semantic_capture)",
+    "capture_legacy": "matching_quad_run block_onset+block_period (structured alignment)",
+    "slot_model": "interleaved half-slots per cycle k: gap G_k (stop vs censor vs episode starts) then episode E_k (capture vs in-episode stop vs censor vs recovery); capture hazard is conditional on the episode existing; capture is absorbing",
+    "shapley": "P0b competing_decomposition on the interleaved gap/episode axis",
+    "gate": "B if propensity ci_low>0; A if exposure ci_low>0 and share>0.5 and not B; else UNRESOLVED; contiguous variant must agree or SENSITIVITY_DIVERGENT; orbit flag independent"
+  },
+  "counts": {
+    "prompts": 1106,
+    "responses_m0": 8848,
+    "responses_m1": 8848,
+    "kmax_by_combo": {
+      "lineage:primary": 41,
+      "lineage:legacy": 241,
+      "contiguous:primary": 18,
+      "contiguous:legacy": 18
+    },
+    "k_pool_by_combo": {
+      "lineage:primary": 8,
+      "lineage:legacy": 8,
+      "contiguous:primary": 4,
+      "contiguous:legacy": 4
+    },
+    "tail_pool_min": 50
+  },
+  "decision": {
+    "label": "P0D_A_EXPOSURE_DOMINATED",
+    "primary_branch": "A_EXPOSURE_DOMINATED",
+    "sensitivity_branch": "A_EXPOSURE_DOMINATED",
+    "orbit_stage_flag": true,
+    "orbit_given_captured": {
+      "m0": 0.017543859649122806,
+      "m1": 0.10655737704918032,
+      "diff": 0.08901351740005752,
+      "ci_low": 0.04231526676054015,
+      "ci_high": 0.13114754098360656
+    },
+    "next_step": "冻结单机制主线：终止失准→暴露→偶发capture；进入 R1/S1 终止决策行为量验证；T-DRS 只做终止成分，F_core/07b 写入 capture→orbit 支撑证据；orbit-stage flag 触发：P2b 瓶颈修复机制保留为 capture→orbit 阶段证据"
+  },
+  "input_sha256": {
+    "event_rows": "d4db280aaeea0ca2428ab616786e8e0bbdcf02511cc00aab40091e6ca8ec5429",
+    "run_manifest": "c85338dcda850bedebbf8c8153f3828042abafcbc67266116f33446d4e69b844"
+  },
+  "outputs": [
+    "P0D_COMPACT_RETURN.txt",
+    "P0D_DISTANCE_TO_CAPTURE.csv",
+    "P0D_EPISODE_COUNT_DISTRIBUTION.csv",
+    "P0D_EPISODE_HAZARD_REPORT.md",
+    "P0D_EPISODE_SUMMARY.csv",
+    "P0D_KEY_METRICS.csv",
+    "P0D_RESPONSE_EPISODES.jsonl",
+    "P0D_SENSITIVITY.csv",
+    "P0D_SHAPLEY.csv"
+  ]
+}

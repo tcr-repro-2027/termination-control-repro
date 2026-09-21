@@ -1,0 +1,60 @@
+{
+  "protocol": "01b-p0c-v0.1",
+  "result_dir": "<PAPER_ROOT>/R0/8b_CK_s42",
+  "selection_mode": "all",
+  "gold_data": "<DATA_ROOT>/cleanv2/eval_supportclean_keep8.jsonl",
+  "gold_key_field": "key",
+  "responses_m0": "<EVAL_ROOT>/responses/qwen3-8b-cleanv2_nothink_n8.jsonl",
+  "responses_m1": "<EVAL_ROOT>/responses/qwen3-8b-keep4-s42_nothink_n8.jsonl",
+  "target": "answer",
+  "bootstrap": 5000,
+  "bootstrap_unit": "prompt (all paired seeds retained)",
+  "random_seed": 20260810,
+  "definitions": {
+    "strict_match": "protocol-v1.0 normalized (source,target,relation), excluding empty identity from valid utility",
+    "relaxed_match": "protocol-v1.0 normalized (source,target), excluding empty identity from valid utility",
+    "normalization": "strip + lowercase + collapse whitespace",
+    "new_relaxed_gold_pair": "overlapping utility count; every first-covered gold pair, including strict hits",
+    "seen_triple_reuse": "evaluation-normalized nonempty triple seen earlier in the same response",
+    "progress": "next relation opportunity j / gold n_output_dicts",
+    "normal_stop": "non-hit-max terminal event at (n_blocks+1)/G",
+    "admin_censor": "hit-max terminal event; excluded from natural-event denominator",
+    "seed": "frozen 01b first_nonempty_triple_reuse (raw exact)",
+    "capture_seed_ordinal": "ordinal among all raw-exact nonempty triple reuse blocks",
+    "legacy_raw_onset_moved": false
+  },
+  "counts": {
+    "prompts": 1106,
+    "responses_m0": 8848,
+    "responses_m1": 8848,
+    "capture_case_rows": 4030,
+    "gold_rows": 1106,
+    "gold_empty_normalized_identities": 0
+  },
+  "decision": {
+    "label": "P0C_COMPLETION_FAILURE_PLUS_MULTISEED_CAPTURE",
+    "completion_component": "SET_COMPLETION_FAILURE_SUPPORTED",
+    "capture_origin": "LATER_SEED_DOMINANT",
+    "next_step": "进入模型级 set-completion/close-list vs continue-dict 边界分析；capture 作为下游多次 seed 暴露结果"
+  },
+  "input_sha256": {
+    "event_rows": "ed8b66e250ad15506814d4e44b29f666be74ccac97a4a71bed85db61f8d2def9",
+    "run_manifest": "151a452c4b6670db0a51c0c73701b285bc7fd59ed5fa9fb812ae53fe49d4ee54",
+    "selection_manifest": "2a348606cd03e39ec734d2128e2bcfb2d0a90d6437dcc1b68b4c9349c9d2a01a",
+    "gold_data": "aabb914172c00a4bcd094511f6a01559c3a89d531997f8e99928cc214e562668",
+    "responses_m0": "9281cf6ea7812b6dcb2964d9ad22e627647ec4a1b687a46f09a20e519bf231be",
+    "responses_m1": "a47b9929b4510ed51fa5a64e9ae4bbb1aca683415f34e3d9e81419eb3b07c304"
+  },
+  "outputs": [
+    "P0C_CAPTURE_CASES.csv",
+    "P0C_CAPTURE_ORDINAL_DISTRIBUTION.csv",
+    "P0C_COMPACT_RETURN.txt",
+    "P0C_CONTRASTS.csv",
+    "P0C_INVALID_OBJECTS.csv",
+    "P0C_KEY_METRICS.csv",
+    "P0C_OPPORTUNITY_RATES.csv",
+    "P0C_REPORT.md",
+    "P0C_RESPONSE_SUMMARY.jsonl",
+    "P0C_SEED_PROGRESS.csv"
+  ]
+}
